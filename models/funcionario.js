@@ -8,11 +8,11 @@ module.exports = (sequelize, DataTypes) => {
 
     Funcionario.init({
 
-        nome_dependente: DataTypes.STRING(45),
-        idade: DataTypes.SMALLINT,
-        tipo: DataTypes.STRING(20),
-        status: DataTypes.STRING(10),
-        id_funcionario: DataTypes.SMALLINT
+        nome_funcionario: DataTypes.STRING(45),
+        telefone: DataTypes.BIGINT,
+        cargo: DataTypes.STRING(30),
+        salario: DataTypes.INTEGER(10),
+        id_departamento: DataTypes.SMALLINT
     },
         {
             sequelize,

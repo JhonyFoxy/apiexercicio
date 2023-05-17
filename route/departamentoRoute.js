@@ -13,15 +13,17 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) =>{
+    departamentoController.create(req, res) 
 })
 
 
 router.put('/:id', (req, res) => {
+    departamentoController.update(req, res)
     })
 
 
 router.delete('/:id', (req, res) => {
-
+    departamentoController.delete(req, res)
 });
 
 module.exports = router;

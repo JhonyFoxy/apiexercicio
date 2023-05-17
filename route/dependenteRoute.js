@@ -13,14 +13,17 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) =>{
+    dependenteController.create(req, res) 
 })
 
 
 router.put('/:id', (req, res) => {
+    dependenteController.update(req, res) 
     })
 
 
 router.delete('/:id', (req, res) => {
+    dependenteController.delete(req, res) 
 
 });
 
